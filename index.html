@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/dom2/styles.css">
+  <title>Calculator</title>
+</head>
+
+<body>
+  <div class="container mt-5">
+    <div class="calculator card p-4">
+        <label>
+      <input type="text" id="display" class="form-control mb-3" readonly>
+
+      <div class="buttons">
+        <button class="btn btn-light" onclick="appendToDisplay('1')">1</button>
+        <button class="btn btn-light" onclick="appendToDisplay('2')">2</button>
+        <button class="btn btn-light" onclick="appendToDisplay('3')">3</button>
+        <button class="btn btn-warning" onclick="appendToDisplay('+')">+</button>
+        <button class="btn btn-light" onclick="appendToDisplay('4')">4</button>
+        <button class="btn btn-light" onclick="appendToDisplay('5')">5</button>
+        <button class="btn btn-light" onclick="appendToDisplay('6')">6</button>
+        <button class="btn btn-warning" onclick="appendToDisplay('-')">-</button>
+        <button class="btn btn-light" onclick="appendToDisplay('7')">7</button>
+        <button class="btn btn-light" onclick="appendToDisplay('8')">8</button>
+        <button class="btn btn-light" onclick="appendToDisplay('9')">9</button>
+        <button class="btn btn-warning" onclick="appendToDisplay('*')">*</button>
+        <button class="btn btn-light" onclick="appendToDisplay('0')">0</button>
+        <button class="btn btn-danger" onclick="clearDisplay()">C</button>
+        <button class="btn btn-success" onclick="calculate()">=</button>
+        <button class="btn btn-warning" onclick="appendToDisplay('/')">/</button>
+        <button class="btn btn-info" onclick="memoryOperation('M+')">M+</button>
+        <button class="btn btn-info" onclick="memoryOperation('M-')">M-</button>
+        <button class="btn btn-info" onclick="memoryOperation('MC')">MC</button>
+        <button class="btn btn-warning" onclick="appendToDisplay('%')">%</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="/dom2/script.js"></script>
+</body>
+
+</html>
